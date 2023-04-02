@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "2a429acb-889c-41d1-9794-8e771a1dea6e",
+		"name": "myLocalAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26356720"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/item",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"id\": 2,\r\n            \"email\": \"janet.weaver@reqres.in\",\r\n            \"first_name\": \"Janet\",\r\n            \"last_name\": \"Weaver\",\r\n            \"avatar\": \"https://reqres.in/img/faces/2-image.jpg\"\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"item"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

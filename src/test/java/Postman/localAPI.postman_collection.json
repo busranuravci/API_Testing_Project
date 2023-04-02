@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "1a6ef4fc-47fb-462c-80ae-64e562dde9d3",
+		"name": "localAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26356720"
+	},
+	"item": [
+		{
+			"name": "  http://localhost:3000/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"id\": \"6\",\r\n            \"firstName\": \"Omer Asaf\",\r\n            \"lastName\": \"Aymak\",\r\n            \"photo\": null\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"13\",\r\n  \"name\": \"pen\",\r\n  \"price\": 9.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "  http://localhost:3000/employees/employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employees\": [\r\n      {\r\n        \"id\": \"1\",\r\n        \"firstName\": \"Tom\",\r\n        \"lastName\": \"Cruise\",\r\n        \"photo\": \"https://jsonformatter.org/img/tom-cruise.jpg\"\r\n      },\r\n      {\r\n        \"id\": \"2\",\r\n        \"firstName\": \"Maria\",\r\n        \"lastName\": \"Sharapova\",\r\n        \"photo\": \"https://jsonformatter.org/img/Maria-Sharapova.jpg\"\r\n      },\r\n      {\r\n        \"id\": \"3\",\r\n        \"firstName\": \"Robert\",\r\n        \"lastName\": \"Downey Jr.\",\r\n        \"photo\": \"https://jsonformatter.org/img/Robert-Downey-Jr.jpg\"\r\n      }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
