@@ -11,7 +11,7 @@ public class JsonPlaceHolderBaseUrl {
 
     protected RequestSpecification spec;
 
-    @Before //this will run before each test method
+    @Before
     public void setUp(){
         spec = new RequestSpecBuilder().setContentType(ContentType.JSON).setBaseUri("https://jsonplaceholder.typicode.com").build();
     }
@@ -24,25 +24,8 @@ URI (Uniform Resource Identifier)
  a URL is a type of URI that identifies the location of a web resource,
  while a URI is a more general concept that can identify any type of resource.
 
- URL example: https://www.google.com/search?q=rest+api
- URI example: file:///Users/JohnDoe/Documents/myfile.txt
- URI example: urn:isbn:978-3-16-148410-0
- URI example: mailto:jane.doe@example.com
- jane.doe@example.com
-
-
-
-
-
-
-
-
 
  */
-
-
-
-
 
 
 

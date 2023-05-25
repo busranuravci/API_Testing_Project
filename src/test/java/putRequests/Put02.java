@@ -14,7 +14,7 @@ public class Put02 extends DummyRestApiBaseUrl {
         URL: https://dummy.restapiexample.com/api/v1/update/21
        HTTP Request Method: PUT Request
        Request body: {
-                        "employee_name": "Ali Can",
+                        "employee_name": "Allen c",
                         "employee_salary": 111111,
                         "employee_age": 23,
                         "profile_image": "Perfect image"
@@ -26,7 +26,7 @@ public class Put02 extends DummyRestApiBaseUrl {
                     {
                         "status": "success",
                         "data": {
-                            "employee_name": "Ali Can",
+                            "employee_name": "Allen C",
                             "employee_salary": 111111,
                             "employee_age": 23,
                             "profile_image": "Perfect image"
@@ -42,9 +42,9 @@ public class Put02 extends DummyRestApiBaseUrl {
 
         //Set the expected data
         DummyRestApiDataPojo expectedData = new DummyRestApiDataPojo("Ali Can", 111111, 23, "Perfect image");
-        System.out.println("expectedData = " + expectedData);//Update için gönderilecek data
+        System.out.println("expectedData = " + expectedData);
         DummyRestApiResponseBodyPojo expectedBodyPojo = new DummyRestApiResponseBodyPojo("success", expectedData, "Successfully! Record has been updated.");
-        //expectedBodyPojo objesini actualData data ile karşılaştırarak assertion yapmak için oluşturduk.
+
 
         //Send the request and get the response
         Response response = given().spec(spec).when().body(expectedData).put("/{first}/{second}");
@@ -64,11 +64,6 @@ public class Put02 extends DummyRestApiBaseUrl {
         assertEquals(expectedData.getProfile_image(), actualData.getData().getProfile_image());
 
     }
-
-
-
-
-
 
 
 

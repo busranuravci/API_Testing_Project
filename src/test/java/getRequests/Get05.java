@@ -56,10 +56,6 @@ public class Get05 extends HerOkuAppBaseUrl {
 
 
 
-
-
-
-
     }
 
 

@@ -71,10 +71,7 @@ public class Get10 extends HerOkuAppBaseUrl {
         assertEquals(bookingdatesMap.get("checkout"),((Map)actualData.get("bookingdates")).get("checkout"));
         assertEquals(expectedData.get("additionalneeds"),actualData.get("additionalneeds"));
 
-               // Animal animal = new Animal();
-               // Cat cat = new Cat();
-        //        Cat cat = (Cat) Animal(); XXX
-          ///
+
 
     }
 
@@ -110,18 +107,6 @@ public class Get10 extends HerOkuAppBaseUrl {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -31,14 +31,6 @@ public class Get15ObjectMapper_Map extends JsonPlaceHolderBaseUrl {
         //Set the URL
         spec.pathParams("first", "todos", "second", 198);
 
-        //Set the expected data
-//        String json = "{\n" +
-//                "   \"userId\": 10,\n" +
-//                "    \"id\": 198,\n" +                                    //Test classında bunu istemiyoruz
-//                "    \"title\": \"quis eius est sint explicabo\",\n" +
-//                "    \"completed\": true\n" +
-//                "  }";
-
         String json = JsonPlaceHolderTestData.expectedDataInString(10, "quis eius est sint explicabo", true);
 
         Map<String, Object> expectedData = ObjectMapperUtils.convertJsonToJava(json, HashMap.class);

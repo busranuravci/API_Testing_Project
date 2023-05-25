@@ -103,13 +103,6 @@ public class Get06 extends HerOkuAppBaseUrl {
 
 
 
-
-
-
-
-
-
-
     }
 
 

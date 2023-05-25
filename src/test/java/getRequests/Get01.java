@@ -8,14 +8,16 @@ import static io.restassured.RestAssured.given;
 public class Get01 {
 
      /*
+                POSITIVE (200)
+
    Given
-       https://restful-booker.herokuapp.com/booking/10
+       https://restful-booker.herokuapp.com/booking/55
    When
        User sends a GET Request to the url
    Then
        HTTP Status Code should be 200
    And
-       Content Type should be JSON
+       Content Type should be JSON  >> application/json
    And
        Status Line should be HTTP/1.1 200 OK
 */
@@ -23,35 +25,24 @@ public class Get01 {
     @Test
     public void get01() {
 
-//        i) set the URL
-        String url = "https://restful-booker.herokuapp.com/booking/10";
+//        1) set the URL
+        String url = "https://restful-booker.herokuapp.com/booking/55";
 
-//        ii) set the expected data
+//        2) set the expected data
 
 
-//        iii) set the request and get the response
-        Response response = given().when().get(url);
+//        3) set the request and get the response
+        Response response = given().get(url);
         response.prettyPrint();
 
-//        iv) do assertion
+//        4) do assertion
          response.
                  then().
-                 assertThat(). //we may not use assertThat() method
                  statusCode(200).
                  contentType("application/json").
                  statusLine("HTTP/1.1 200 OK");
 
 
     }
-
-
-
-
-
-
-
-
-
-
 
 }

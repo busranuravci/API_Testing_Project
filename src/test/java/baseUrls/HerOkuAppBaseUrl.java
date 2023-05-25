@@ -11,15 +11,11 @@ public class HerOkuAppBaseUrl {
 
     protected RequestSpecification spec;
 
-    @Before//This will run before each test method
+    @Before
     public void setUp() {
         spec = new RequestSpecBuilder().addHeader("Cookie", "token=" + generateToken()).
                 setContentType(ContentType.JSON).setBaseUri("https://restful-booker.herokuapp.com").build();
     }
-
-
-
-
 
 
 

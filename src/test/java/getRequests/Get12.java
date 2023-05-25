@@ -55,8 +55,8 @@ public class Get12 extends GoRestBaseUrl {
                         "data.status", hasItem("active"),
                         "data.name", hasItems("Uttam Varman", "Agniprava Verma Esq.", "Devasree Pandey"));
 
-        //Kadın ve erkek sayılarını karşılaştıralım:
-        //1. Yol:
+
+        //1. :
         JsonPath jsonPath = response.jsonPath();
         List<String> genders = jsonPath.getList("data.gender");
         System.out.println("genders = " + genders);
@@ -69,7 +69,7 @@ public class Get12 extends GoRestBaseUrl {
         System.out.println("kadinSayisi = " + kadinSayisi);
         assertTrue(kadinSayisi <= genders.size() - kadinSayisi);
 
-        //2. Yol: Kadın ve erkek sayılarını Groovy kullanarak karşılaştıralım:
+        //2.
         List<String> kadinKullaniciList = jsonPath.getList("data.findAll{it.gender=='female'}.gender");
         System.out.println("kadinKullaniciList = " + kadinKullaniciList);
         List<String> erkekKullaniciList = jsonPath.getList("data.findAll{it.gender=='male'}.gender");

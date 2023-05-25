@@ -30,7 +30,7 @@ public class Post05ObjectMapper_Pojo extends JsonPlaceHolderBaseUrl {
                                     }
      */
 
-    @Test//En iyi yöntem
+    @Test
     public void post05() {
         //Set the URL
         spec.pathParam("first", "todos");
@@ -52,8 +52,6 @@ public class Post05ObjectMapper_Pojo extends JsonPlaceHolderBaseUrl {
         assertEquals(expectedData.getCompleted(), actualData.getCompleted());
 
     }
-
-
 
 
 

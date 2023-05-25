@@ -39,13 +39,13 @@ public class Delete01 extends JsonPlaceHolderBaseUrl {
         Map<String, String> actualData = ObjectMapperUtils.convertJsonToJava(response.asString(), HashMap.class);
         assertEquals(200, response.statusCode());
 
-        //1. Yol
+        //1.
         assertEquals(expectedData, actualData);
 
-        //2. Yol
+        //2.
         assertTrue(actualData.isEmpty());
 
-        //3. Yol
+        //3.
         assertEquals(0, actualData.size());
 
     }

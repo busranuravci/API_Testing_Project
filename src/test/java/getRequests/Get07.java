@@ -50,7 +50,7 @@ public class Get07 extends PetStoreBaseUrl {
       //Set the expected data
 
       //Send the request and get the response
-      Response response = given().spec(spec).when().get("/{first}/{second}");
+      Response response = given(spec).when().get("/{first}/{second}");
       response.prettyPrint();
 
       //Do assertion

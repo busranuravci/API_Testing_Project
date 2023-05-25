@@ -67,11 +67,4 @@ public class Get13 extends HerOkuAppBaseUrl {
 
 
 
-
-
-
-
-
-
-
 }

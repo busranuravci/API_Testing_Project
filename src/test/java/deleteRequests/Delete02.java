@@ -35,6 +35,8 @@ public class Delete02 extends DummyRestApiBaseUrl {
    And
        "message" is "Successfully! Record has been deleted"
      */
+
+
     @Test
     public void delete02() {
         //Set the url

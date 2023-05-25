@@ -13,17 +13,14 @@ public class AuthenticationGmiBank {
     public static String generateToken() {
 
         Map<String, Object> postBody = new HashMap<>();
-        postBody.put("password", "Batch.103");
+        postBody.put("password", "B100");
         postBody.put("rememberMe", true);
-        postBody.put("username", "batch_yuzuc");
+        postBody.put("username", "batch_y1");
 
         Response response = given().contentType(ContentType.JSON).body(postBody).post("https://gmibank.com/api/authenticate");
 
         return response.jsonPath().getString("id_token");
     }
-
-
-
 
 
 
